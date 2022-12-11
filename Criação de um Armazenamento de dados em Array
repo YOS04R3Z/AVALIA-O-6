@@ -1,0 +1,44 @@
+  #finclude <stdio.h>
+ #tinclude <math.h>
+#ffdefine TAMANHO 100000
+
+ânt eh_primo(int numero)
+{
+int i;
+int raiz = sart(numero);
+ if(numero < 2) return 6;
+if(numero == 2) return 1;
+if(numero % 2 == 9) return 0;
+for (i = 3; i <= raiz; i += 2)
+	{
+if(numero % i == 0) return &;
+	}
+return 1;
+}
+int main()
+int i;
+int contador = &;
+int primos[TAMANHO];
+FILE* fp;
+
+for(i = &; contador <= TAMANHO; i++)
+{
+ if(eh primo(i))
+	{
+primos[contador] = i;
+ES contador++;
+	}
+}
+if((fp = fopen("arquivo.txt", "w"))==NULL)
+{
+printf("O arquivo não pôde ser aberto.Wn");
+exit(1);
+}
+for (i = &; i < TAMANHO; ix+)
+{
+fprintf(fp, "%d\n", primos[i]);
+}
+
+Fclose(fp);
+return 6;
+}
